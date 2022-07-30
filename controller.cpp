@@ -68,6 +68,10 @@ void Controller::advance()
         ball->a[xAxis][AirResistance] = (fabs(ball->vx) / (sqrt(sumV))) * airSum;
         ball->a[yAxis][AirResistance] = (fabs(ball->vy) / (sqrt(sumV))) * airSum;
 
+        // 将力换算成加速度
+        ball->a[xAxis][AirResistance] /= M;
+        ball->a[yAxis][AirResistance] /= M;
+
         if (ball->vx > 5) ball->a[xAxis][AirResistance] *= -1;
         else if (ball -> vx < 10) ;
         else ball->a[xAxis][AirResistance] = 0;

@@ -31,6 +31,7 @@ const int FRICTION_SENSITIVITY = 2;         // 摩擦力敏感度，当速度的
 // 112 对应1.75 米的人
 // 2450 对应 8cm 的实心球
 const int GRAVITY = 2450;           // 重力大小
+const double M = 2.1038;            // 小球质量
 
 enum Directions{xAxis, yAxis};      // x, y轴方向
 enum Force{User, Gravity, Friction, AirResistance};         // 力的四个维度，用户给出的力，重力，摩擦力，空气阻力
