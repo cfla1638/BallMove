@@ -26,12 +26,3 @@
 
 
 项目使用QGraphicsScene + QGraphicsItem + QGraphicsView 完成。
-
-**编译**:
-
-cd /目录
-
-qmake -project
-
-make
-
