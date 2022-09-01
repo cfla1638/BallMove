@@ -28,3 +28,5 @@
 项目使用QGraphicsScene + QGraphicsItem + QGraphicsView 完成。
 
 https://cfla1638.github.io/2022/08/21/BallMove-%E5%9F%BA%E4%BA%8EQt%E7%9A%84GUI%E5%B0%8F%E9%A1%B9%E7%9B%AE/
+
+最后编辑于 2022/9/1
