@@ -4,11 +4,12 @@
 #include "controller.h"
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
+    : QMainWindow(parent),
+      scene(new QGraphicsScene(this)),
+      view(new QGraphicsView(scene, this)),
+      controller(new Controller(*scene, this))
+
 {
-    scene = new QGraphicsScene(this);
-    view = new QGraphicsView(scene, this);
-    controller = new Controller(*scene, this);
     setCentralWidget(view);
     resize(750, 750);
 

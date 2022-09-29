@@ -20,8 +20,8 @@ private slots:
 
 private:
     void initScene();
-    QGraphicsView * view;
     QGraphicsScene * scene;
+    QGraphicsView * view;
     Controller * controller;
 };
 #endif // MAINWINDOW_H
